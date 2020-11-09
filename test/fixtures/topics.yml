@@ -1,21 +1,21 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  topics_title: MyString
+  topics_title: MyString1
   content: MyString
   description: MyText
   duration: 
-  image_url: MyString
+  image_url: ruby.jpg
   demonstrator: MyString
   package_price: 9.99
   queries_email: MyString
 
 two:
-  topics_title: MyString
+  topics_title: MyString2
   content: MyString
   description: MyText
   duration: 
-  image_url: MyString
+  image_url: ruby.jpg
   demonstrator: MyString
   package_price: 9.99
   queries_email: MyString
