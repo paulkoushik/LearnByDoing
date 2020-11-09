@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Topics</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Topics title</th>
+      <th>Content</th>
+      <th>Description</th>
+      <th>Duration</th>
+      <th>Image url</th>
+      <th>Demonstrator</th>
+      <th>Package price</th>
+      <th>Queries email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @topics.each do |topic| %>
+      <tr>
+        <td><%= topic.topics_title %></td>
+        <td><%= topic.content %></td>
+        <td><%= topic.description %></td>
+        <td><%= topic.duration %></td>
+        <td><%= topic.image_url %></td>
+        <td><%= topic.demonstrator %></td>
+        <td><%= topic.package_price %></td>
+        <td><%= topic.queries_email %></td>
+        <td><%= link_to 'Show', topic %></td>
+        <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+        <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Topic', new_topic_path %>

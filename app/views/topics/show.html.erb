@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Topics title:</strong>
+  <%= @topic.topics_title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @topic.content %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @topic.description %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @topic.duration %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @topic.image_url %>
+</p>
+
+<p>
+  <strong>Demonstrator:</strong>
+  <%= @topic.demonstrator %>
+</p>
+
+<p>
+  <strong>Package price:</strong>
+  <%= @topic.package_price %>
+</p>
+
+<p>
+  <strong>Queries email:</strong>
+  <%= @topic.queries_email %>
+</p>
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>
