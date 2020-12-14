@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LearnByDoing</title>
+    <title>Learn and Practice Coding Online</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +9,25 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+   <body>
+    <header class="main">
+      <%= image_tag 'logo.png', alt: 'Learn Coding by Practicing Yourself' %>
+      <h1><%= @page_title %></h1>
+    </header>
+    <section class="content">
+      <nav class="side_nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/courses">Courses</a></li>
+          <li><a href="/our_demonstrators">Demonstrators</a></li>
+          <li><a href="/pricings">Pricings</a></li>
+          <li><a href="/news">News</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    <%= content_tag :main, class: controller.controller_name do %>
+      <%= yield %>
+    <% end %>
+    </section>
   </body>
 </html>

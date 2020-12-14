@@ -4,7 +4,7 @@ one:
   topics_title: MyString1
   content: MyString
   description: MyText
-  duration: 
+  duration: 1.00
   image_url: ruby.jpg
   demonstrator: MyString
   package_price: 9.99
@@ -14,7 +14,7 @@ two:
   topics_title: MyString2
   content: MyString
   description: MyText
-  duration: 
+  duration: 1.00
   image_url: ruby.jpg
   demonstrator: MyString
   package_price: 9.99
