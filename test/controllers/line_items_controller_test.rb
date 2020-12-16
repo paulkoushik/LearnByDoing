@@ -17,10 +17,13 @@ class LineItemsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create line_item" do
     assert_difference('LineItem.count') do
-      post line_items_url, params: { line_item: { courses_id: @line_item.courses_id, topics_id: @line_item.topics_id } }
+        post line_items_url, params:  { topic_id: topics(:ruby).id }
     end
 
-    assert_redirected_to line_item_url(LineItem.last)
+    follow_redirect!
+
+    assert_select 'h2', 'Learn and Practice Coding Online'
+ 
   end
 
   test "should show line_item" do
